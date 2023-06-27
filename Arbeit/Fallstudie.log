@@ -1,0 +1,98 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.27)  27 JUN 2023 18:57
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"i:/Meine Ablage/Studium/SoSe 2023/Praktische Fallstudie/Arbeit/Fallstudie"
+(i:/Meine Ablage/Studium/SoSe 2023/Praktische Fallstudie/Arbeit/Fallstudie.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22> (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(c:/texlive/2023/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (c:/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2023/02/13 3.86 The Babel package
+\babel@savecnt=\count193
+\U@D=\dimen141
+\l@unhyphenated=\language87
+ (c:/texlive/2023/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count194
+ (c:/texlive/2023/texmf-dist/tex/generic/babel-german/german.ldf
+Language: german 2021/02/27 v2.13 German support for babel (pre-1996 orthography)
+ (c:/texlive/2023/texmf-dist/tex/generic/babel-german/germanb.ldf
+Language: germanb 2021/02/27 v2.13 German support for babel (pre-1996 orthography)
+Package babel Info: Making " an active character on input line 139.
+))) (c:/texlive/2023/texmf-dist/tex/generic/babel/locale/de/babel-german.tex
+Package babel Info: Importing font and identification data for german
+(babel)             from babel-de-1901.ini. Reported on input line 25.
+) (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count195
+\l__pdf_internal_box=\box51
+) (./Fallstudie.aux)
+\openout1 = `Fallstudie.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 11.
+ (./Fallstudie.toc)
+\tf@toc=\write3
+\openout3 = `Fallstudie.toc'.
+
+
+Overfull \hbox (11.78752pt too wide) in paragraph at lines 21--28
+\OT1/cmr/m/n/12 Diese Ar-beit besch[]aftigt sich mit der Einf[]uhrung ei-nes neu-en Gesch[]aftsprozesses
+ []
+
+
+Overfull \hbox (15.03609pt too wide) in paragraph at lines 21--28
+\OT1/cmr/m/n/12 zur In-ven-ta-ri-sie-rung und Sicht-pr[]ufung von Elec-tro-nic Funds Transfers-Terminals
+ []
+
+[1
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Fallstudie.aux) ) 
+Here is how much of TeX's memory you used:
+ 1525 strings out of 476025
+ 27354 string characters out of 5794015
+ 1855382 words of memory out of 5000000
+ 22027 multiletter control sequences out of 15000+600000
+ 515665 words of font info for 43 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,6n,52p,286b,194s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Fallstudie.pdf (1 page, 80345 bytes).
+PDF statistics:
+ 38 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
