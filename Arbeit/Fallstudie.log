@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.27)  21 SEP 2023 16:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.27)  21 SEP 2023 17:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -87,49 +87,59 @@ Overfull \hbox (4.26122pt too wide) in paragraph at lines 19--22
  []
 
 
-Overfull \hbox (20.4041pt too wide) in paragraph at lines 23--26
+Overfull \hbox (20.4041pt too wide) in paragraph at lines 23--30
 []\OT1/cmr/m/n/12 Die zu-neh-men-de Di-gi-ta-li-sie-rung und Au-to-ma-ti-sie-rung von Gesch[]aftsprozessen
  []
 
-[2]
-Overfull \hbox (48.70381pt too wide) in paragraph at lines 67--69
+[2] [3{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Overfull \hbox (48.70381pt too wide) in paragraph at lines 73--75
 \OT1/cmr/m/n/12 ei-ni-gen Jah-ren von te-gut... als idea-le L[]osung zur Di-gi-ta-li-sie-rung von Gesch[]aftsprozessen
  []
 
-[3{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Overfull \hbox (23.07832pt too wide) in paragraph at lines 84--85
+
+Overfull \hbox (23.07832pt too wide) in paragraph at lines 90--91
 []\OT1/cmr/m/it/12 Echtzeit-Erfassung: \OT1/cmr/m/n/12 Da-ten k[]onnen so-fort vor Ort ein-ge-ge-ben und []ubertragen
  []
 
 
-Overfull \hbox (6.99318pt too wide) in paragraph at lines 90--91
+Overfull \hbox (6.99318pt too wide) in paragraph at lines 96--97
 []\OT1/cmr/m/it/12 Begrenzte Bild-schirm-gr[]o^^Ye: \OT1/cmr/m/n/12 Die Er-fas-sung kom-ple-xer Da-ten kann schwie-
  []
 
 [4]
-Overfull \hbox (134.86575pt too wide) in paragraph at lines 136--136
+Overfull \hbox (23.2221pt too wide) in paragraph at lines 115--118
+\OT1/cmr/m/n/12 in Ab-spra-che mit dem En-ter-pri-se Ar-chi-tek-ten der tegut...-Informationstechnologie
+ []
+
+[5] [6]
+Overfull \hbox (21.83322pt too wide) in paragraph at lines 171--173
+\OT1/cmr/m/n/12 be-ste-hen-de Sy-stem-land-schaft wur-de durch-gef[]uhrt, ge-folgt von ausf[]uhrlichen
+ []
+
+
+Overfull \hbox (134.86575pt too wide) in paragraph at lines 179--179
 []\OT1/cmr/bx/n/17.28 Einf[]uhrung und Ab-stim-mung des neu-en Gesch[]aftsprozesses 
  []
 
-[5]
-Overfull \hbox (8.01672pt too wide) in paragraph at lines 149--151
+[7]
+Overfull \hbox (8.01672pt too wide) in paragraph at lines 192--194
 \OT1/cmr/m/n/12 Nach der er-sten Einf[]uhrung des neu-en Pro-zes-ses wur-den re-gelm[]a^^Yige Feedback-
  []
 
-[6] (./Fallstudie.aux) ) 
+[8] (./Fallstudie.aux) ) 
 Here is how much of TeX's memory you used:
- 1543 strings out of 476025
- 27623 string characters out of 5794015
- 1857382 words of memory out of 5000000
- 22038 multiletter control sequences out of 15000+600000
+ 1546 strings out of 476025
+ 27658 string characters out of 5794015
+ 1859382 words of memory out of 5000000
+ 22041 multiletter control sequences out of 15000+600000
  518139 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,52p,323b,195s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 42i,6n,52p,418b,195s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Fallstudie.pdf (6 pages, 84225 bytes).
+Output written on Fallstudie.pdf (8 pages, 91972 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

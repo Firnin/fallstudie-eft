@@ -23,6 +23,10 @@ Aufgabenstellung, die Einbettung des Themas in ein größeres Umfeld und bietet 
 Die zunehmende Digitalisierung und Automatisierung von Geschäftsprozessen hat in den letzten Jahren zu erheblichen Verbesserungen in Effizienz und Genauigkeit geführt. \textbf{Nachweis suchen!}
 Die Inventarisierung und Sichtprüfung von EFTs stellt jedoch weiterhin eine Herausforderung dar, da der aktuelle Prozess manuell und papierbasiert ist und nicht regelmäßig durchgeführt wird. 
 Um diese Schwachstellen zu beheben, wird in dieser Arbeit ein neuer Geschäftsprozess eingeführt, der die Vorteile der Digitalisierung nutzt.
+Die Motivation dahinter stammt aus einem Projekt der tegut... gute Lebensmittel GmbH \& Co. KG (nachfolgend nur kurz tegut... genannt) zur Verschlüsselung der Übertragung von
+Kreditkartendaten vom Bezahlterminal zum Zahlungsdienstleister. Um die Firmware einsetzen zu können, die diese Verschlüsselung ermöglicht, muss tegut... eine höhere Stufe der 
+"Payment Card Industry Data Security Standard"-Zertifizierung (PCI-DSS) als bislang erreichen. Um dieser gerecht zu werden, muss unter Anderem eine laufende Inventur und
+Sichtprüfung aller aktiv eingesetzten EFTs gewährleistet sein. 
 
 Die Arbeit ist in mehrere Kapitel unterteilt, die jeweils verschiedene Aspekte der Problematik behandeln. Im zweiten Kapitel wird die Planungsphase näher beschrieben, 
 in der der IST-Prozess analysiert und Schwachstellen identifiziert werden. Dabei wird auch die Wahl der Bizagi-Plattform als Lösung zur Digitalisierung des Prozesses erläutert. 
@@ -62,7 +66,7 @@ Die Analyse hat mehrere Schwachstellen des IST-Prozesses offengelegt:
 \item Reproduzierbarkeit: Ohne festgeschriebene Abläufe kann der Prozess nicht jedes Mal korrekt reproduziert werden.
 \end{itemize}
 Der Prozess zur Aufnahme der EFTs in das Inventar, ist ein Standardprozess für alle neue Hardware bei tegut... . Diesen Prozess neu zu gestalten ist nicht Bestandteil dieser
-Arbeit und wird bei tegut... bereits in einem 
+Arbeit und wird bei tegut... bereits in einem separatem Projekt bearbeitet.
 
 \subsection{Wahl der Bizagi-Plattform}
 
@@ -72,7 +76,7 @@ Einige Vorteile dieser Plattform sind:
 \item Benutzerfreundlichkeit: Die Plattform bietet eine intuitive Benutzeroberfläche, die den Übergang von einem manuellen zu einem digitalen Prozess erleichtert.
 \item Flexibilität: Die Plattform ermöglicht es, den Prozess nach Bedarf anzupassen und zu erweitern.
 \end{itemize}
-Die Implementierung der Bizagi-Plattform wird im nächsten Kapitel näher erläutert.
+Die Implementierung des Prozesses mit Hilfe der Bizagi-Plattform wird im nächsten Kapitel näher erläutert.
 
 \subsection{Mobil vs. Stationär: Die Wahl des Endgeräts}
 
@@ -107,8 +111,10 @@ Die Verwendung eines geeigneten Endgeräts ist entscheidend für den Erfolg des 
 wie Inventar- oder Seriennummern.
 \end{itemize}
 
-\subsection{Entscheidung}
-
+\subsubsection{Entscheidung}
+Nach sorgfältiger Abwägung aller Vor- und Nachteile beider Lösungen wurde in Absprache mit dem Enterprise Architekten der tegut...-Informationstechnologie entschieden, 
+den Prozess zunächst für den PC zu modellieren. Diese Entscheidung wurde maßgeblich von der Tatsache beeinflusst, dass noch nicht alle Filialen die neuen, Android-betriebenen 
+MDEs verwenden. Zudem legt der Enterprise Architekt Wert darauf, dass die MDEs als Plattform so isoliert wie möglich betrieben werden.
 
 \section{Modellierung des SOLL-Prozesses}
 
@@ -122,6 +128,7 @@ Zunächst wurden die Hauptziele für den neuen Prozess definiert:
 \item Minimierung des manuellen Aufwands durch Automatisierung.
 \item Erhöhung der Transparenz und Nachverfolgbarkeit von EFTs.
 \item Sicherstellung der Datenkonsistenz und -integrität.
+\item Erfüllung des PCI-DSS Standards.
 \end{itemize}
 
 \subsection{Hauptkomponenten und Abläufe}
@@ -134,6 +141,40 @@ direkte Integration mit Bizagi erschwert. Daher erfolgt die Aktualisierung der C
 \item **Benachrichtigungssystem:** Bei Abweichungen oder Anmerkungen werden die Mitarbeiter der entsprechenden Fachabteilung informiert. Dies ermöglicht es ihnen, die 
 CMDB manuell über ServiceNow zu aktualisieren.
 \end{itemize}
+
+\subsection{Modellierung des SOLL-Prozesses mit Bizagi}
+
+Bizagi ist eine renommierte Plattform für die Geschäftsprozessmodellierung und -automatisierung. Die Software bietet verschiedene Werkzeuge zur Darstellung, 
+Optimierung und Digitalisierung von Geschäftsprozessen. In diesem Teilabschnitt wird erläutert, wie Bizagi zur Modellierung des SOLL-Prozesses verwendet wurde und welche 
+Vorteile die Plattform in diesem Kontext bietet.
+
+\subsubsection{Möglichkeiten von Bizagi}
+
+Bizagi bietet eine Vielzahl von Funktionen, die den gesamten Lebenszyklus eines Geschäftsprozesses abdecken:
+
+\begin{itemize}
+\item \textit{Drag-and-Drop-Prozessmodellierung:} Die intuitive Benutzeroberfläche ermöglicht es, Geschäftsprozesse einfach durch Drag-and-Drop zu modellieren, 
+wodurch kein technisches Vorwissen erforderlich ist.
+\item \textit{Integrierte Datenbank:} Bizagi ermöglicht eine nahtlose Integration mit bestehenden Datenbanken und Systemen.
+\item \textit{Formular-Designer:} Mit dem integrierten Formular-Designer können Eingabemasken für Benutzer erstellt werden, um Daten effizient zu erfassen.
+\item \textit{Automatisierung und Ausführung:} Einmal modellierte Prozesse können automatisiert und direkt in Bizagi ausgeführt werden.
+\item \textit{Berichterstattung und Analyse:} Bizagi bietet leistungsstarke Analysetools, um den Fortschritt und die Leistung von Geschäftsprozessen zu überwachen.
+\end{itemize}
+
+\subsubsection{Schritte zur Digitalisierung des Prozesses}
+
+\begin{enumerate}
+\item \textit{Analyse des IST-Prozesses:} Vor Beginn der eigentlichen Modellierung wurde der aktuelle, manuelle Prozess analysiert, um Schwachstellen und 
+Verbesserungspotenziale zu identifizieren.
+\item \textit{Prozessmodellierung:} Mit Hilfe des Bizagi Modelers wurde der SOLL-Prozess Schritt für Schritt modelliert.
+\item \textit{Formulargestaltung:} Für den modellierten Prozess wurden entsprechende Eingabemasken mit dem Formular-Designer erstellt.
+\item \textit{Integration und Test:} Die Integration des modellierten Prozesses in die bestehende Systemlandschaft wurde durchgeführt, gefolgt von ausführlichen 
+Tests zur Sicherstellung der Funktionalität.
+\item \textit{Implementierung und Rollout:} Nach erfolgreichen Tests wurde der digitalisierte Prozess in das Live-System überführt und den Nutzern zur Verfügung gestellt.
+\end{enumerate}
+
+Durch die Nutzung von Bizagi konnte der neue Geschäftsprozess effizient modelliert, optimiert und schließlich digitalisiert werden. Dabei hat sich besonders der Formular-Designer als wertvolles Werkzeug herausgestellt, da er eine einfache und intuitive Erfassung der benötigten Daten ermöglicht.
+
 
 \section{Einführung und Abstimmung des neuen Geschäftsprozesses}
 
