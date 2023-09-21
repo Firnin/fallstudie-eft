@@ -1,31 +1,155 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage[german]{babel}
 
-\title{Exposé - Einführung und Digitalisierung eines neuen Geschäftsprozesses}
+\title{Einführung und Digitalisierung eines neuen Geschäftsprozesses - Sichtprüfung und Inventur von EFTs}
 \author{Kilian Schlosser}
-\date{Mai 2023}
+\date{Sommersemester 2023}
 
 \begin{document}
 
 
 \maketitle
 
-\begin{abstract}
-    tbd
-\end{abstract}
 
 \tableofcontents
+\newpage
 
 \section{Einleitung}
 
-Diese Arbeit beschäftigt sich mit der Einführung eines neuen Geschäftsprozesses zur Inventarisierung und Sichtprüfung von Electronic Funds Transfers-Terminals (EFTs). 
-Das Ziel besteht darin, den bestehenden manuellen Prozess zu optimieren und durch eine digitale Lösung zu ersetzen. \textit{Diese Einleitung gibt einen Überblick über die 
-Aufgabenstellung, die Einbettung des Themas in ein größeres Umfeld und bietet einen Ausblick auf die weiteren Kapitel dieser Arbeit.}
-Die Arbeit findet im Rahmen eines größeren Projekts innerhalb der tegut... gute Lebensmittel GmbH \& Co. KG (nachfolgend nur tegut genannt) statt. Das Projekt hat die Einführung
-einer Ende-zu-Ende-Verschlüsselung von Kreditkartenkarten vom Bezahlterminal zum Zahlungsdienstleister als Ziel. Damit die Firmware, die das ermöglicht, auf den Bezahlterminals
-eingesetzt werden darf, muss tegut eine neue Zertifizierungsstufe (genannt \textbf{nachschlagen und einfügen}) ablegen. Um diese erreichen zu können, müssen einige Anforderungen
-in einem Selbstüberprüfungsprozess gegeben sein, unter Anderem eine regelmäßige Inventarisierung und Sichtprüfung aller aktiv eingesetzten EFTs.
+Diese Arbeit beschäftigt sich mit der Einführung eines neuen Geschäftsprozesses zur Inventarisierung und Sichtprüfung von Electronic Funds Transfers (EFTs). 
+Das Ziel besteht darin, den bestehenden manuellen Prozess zu optimieren und durch eine digitale Lösung zu ersetzen. Diese Einleitung gibt einen Überblick über die 
+Aufgabenstellung, die Einbettung des Themas in ein größeres Umfeld und bietet einen Ausblick auf die weiteren Kapitel dieser Arbeit.
 
-Die Arbeit ist in mehrere Kapitel unterteilt, in denen verschiedene Aspekte der Problemlösung näher beschrieben werden.
+Die zunehmende Digitalisierung und Automatisierung von Geschäftsprozessen hat in den letzten Jahren zu erheblichen Verbesserungen in Effizienz und Genauigkeit geführt. \textbf{Nachweis suchen!}
+Die Inventarisierung und Sichtprüfung von EFTs stellt jedoch weiterhin eine Herausforderung dar, da der aktuelle Prozess manuell und papierbasiert ist und nicht regelmäßig durchgeführt wird. 
+Um diese Schwachstellen zu beheben, wird in dieser Arbeit ein neuer Geschäftsprozess eingeführt, der die Vorteile der Digitalisierung nutzt.
+
+Die Arbeit ist in mehrere Kapitel unterteilt, die jeweils verschiedene Aspekte der Problematik behandeln. Im zweiten Kapitel wird die Planungsphase näher beschrieben, 
+in der der IST-Prozess analysiert und Schwachstellen identifiziert werden. Dabei wird auch die Wahl der Bizagi-Plattform als Lösung zur Digitalisierung des Prozesses erläutert. 
+Das dritte Kapitel widmet sich der Modellierung des SOLL-Prozesses und zeigt auf, wie die Inventarisierung und Sichtprüfung der EFTs digitalisiert und automatisiert werden 
+können.
+
+Im vierten Kapitel wird die Einführung und Abstimmung des neuen Geschäftsprozesses diskutiert. Es werden die verschiedenen Stakeholder einbezogen und deren Bedürfnisse 
+berücksichtigt, um eine reibungslose Implementierung zu gewährleisten. Des Weiteren wird im fünften Kapitel die Frage der Endgeräte diskutiert und die Vor- und Nachteile 
+von Mobilen Datenerfassungsgeräten (MDE) und Personal Computern (PC) abgewogen.
+
+Abschließend werden im sechsten Kapitel die wichtigsten Erkenntnisse zusammengefasst und ein Ausblick auf mögliche zukünftige Entwicklungen gegeben.
+
+\section{Planungsphase}
+
+Eine entscheidende Phase vor der eigentlichen Implementierung des neuen Geschäftsprozesses war die Planungsphase. Hier wurden grundlegende Überlegungen und Entscheidungen 
+getroffen, die die Basis für die spätere Umsetzung bildeten. Ein Hauptaugenmerk lag dabei auf der Wahl des optimalen Endgeräts für den Prozess.
+Zusätzlich besteht sie aus einer detaillierten Analyse des IST-Prozesses, Identifikation der Schwachstellen und einer gezielten Lösungssuche.
+
+\subsection{Analyse des IST-Prozesses}
+
+Eine detaillierte Aufnahme des bestehenden Prozesses war essentiell, um die aktuellen Abläufe, Verantwortlichkeiten und Tools zu verstehen. Hierbei wurden folgende Punkte 
+festgestellt:
+\begin{itemize}
+\item Die EFTs wurden bei Lieferung manuell in Listen erfasst und mit Inventaraufklebern versehen.
+\item Anschließend wurde die Liste in die Content Management Database (CMDB) importiert.
+\item Bei Auslieferung an eine Filiale wurde die Filial- und Kassennummer nachgetragen.
+\item Die Abläufe waren nicht fest definiert.
+\end{itemize}
+Einen Prozess zur laufenden Inventur oder einer Sichtprüfung gab es bislang nicht.
+
+\subsection{Identifikation von Schwachstellen}
+
+Die Analyse hat mehrere Schwachstellen des IST-Prozesses offengelegt:
+\begin{itemize}
+\item Zeitaufwand: Der manuelle Prozess ist zeitaufwändig und erfordert mehrere Mitarbeiter.
+\item Nachverfolgbarkeit: Ohne eine regelmäßige Inventur ist es schwierig, einen Überblick über alle EFTs zu behalten und sie nachzuverfolgen.
+\item Reproduzierbarkeit: Ohne festgeschriebene Abläufe kann der Prozess nicht jedes Mal korrekt reproduziert werden.
+\end{itemize}
+Der Prozess zur Aufnahme der EFTs in das Inventar, ist ein Standardprozess für alle neue Hardware bei tegut... . Diesen Prozess neu zu gestalten ist nicht Bestandteil dieser
+Arbeit und wird bei tegut... bereits in einem 
+
+\subsection{Wahl der Bizagi-Plattform}
+
+Nach einer gründlichen Marktanalyse wurde die Bizagi-Plattform schon vor einigen Jahren von tegut... als ideale Lösung zur Digitalisierung von Geschäftsprozessen gewählt. 
+Einige Vorteile dieser Plattform sind:
+\begin{itemize}
+\item Benutzerfreundlichkeit: Die Plattform bietet eine intuitive Benutzeroberfläche, die den Übergang von einem manuellen zu einem digitalen Prozess erleichtert.
+\item Flexibilität: Die Plattform ermöglicht es, den Prozess nach Bedarf anzupassen und zu erweitern.
+\end{itemize}
+Die Implementierung der Bizagi-Plattform wird im nächsten Kapitel näher erläutert.
+
+\subsection{Mobil vs. Stationär: Die Wahl des Endgeräts}
+
+Die Verwendung eines geeigneten Endgeräts ist entscheidend für den Erfolg des digitalisierten Prozesses. Insbesondere ging es darum, ob moderne MDEs oder herkömmliche PCs eingesetzt werden sollten.
+
+\subsubsection{Mobile Datenerfassungsgeräte (MDEs)}
+
+\textbf{Vorteile:}
+\begin{itemize}
+\item \textit{Mobilität:} MDEs können überall hin mitgenommen werden, was gerade bei der Erfassung von EFTs vor Ort sehr nützlich ist.
+\item \textit{Echtzeit-Erfassung:} Daten können sofort vor Ort eingegeben und übertragen werden.
+\item \textit{Barcodescanner und Kamera:} Die MDEs sind mit Barcodescannern und Kameras ausgestattet, was die Datenerfassung erleichtert.
+\end{itemize}
+
+\textbf{Nachteile:}
+\begin{itemize}
+\item \textit{Begrenzte Bildschirmgröße:} Die Erfassung komplexer Daten kann schwieriger sein als auf einem PC.
+\end{itemize}
+
+\subsubsection{Personal Computer (PC)}
+
+\textbf{Vorteile:}
+\begin{itemize}
+\item \textit{Größerer Bildschirm:} Dies ermöglicht eine übersichtlichere Darstellung und leichtere Eingabe komplexer Daten.
+\item \textit{Leistungsfähigkeit:} PCs können komplexe Aufgaben schneller verarbeiten.
+\item \textit{Standardisierung:} PCs sind bereits in den Büros der Filialen vorhanden und die Mitarbeiter sind mit ihrer Bedienung vertraut.
+\end{itemize}
+
+\textbf{Nachteile:}
+\begin{itemize}
+\item \textit{Mobilität:} PCs sind in der Regel stationär und nicht für den Einsatz vor Ort geeignet. Das erhöht die Fehlerquote bei der Übertragung von komplexen Daten,
+wie Inventar- oder Seriennummern.
+\end{itemize}
+
+\subsection{Entscheidung}
+
+
+\section{Modellierung des SOLL-Prozesses}
+
+Nachdem die Schwachstellen des IST-Prozesses identifiziert und die Bizagi-Plattform als Lösung ausgewählt wurde, folgt nun die Modellierung des gewünschten (SOLL) Prozesses. 
+Dieser Abschnitt beschreibt die Schritte und Überlegungen, die in diese Phase eingeflossen sind.
+
+\subsection{Ziele des SOLL-Prozesses}
+
+Zunächst wurden die Hauptziele für den neuen Prozess definiert:
+\begin{itemize}
+\item Minimierung des manuellen Aufwands durch Automatisierung.
+\item Erhöhung der Transparenz und Nachverfolgbarkeit von EFTs.
+\item Sicherstellung der Datenkonsistenz und -integrität.
+\end{itemize}
+
+\subsection{Hauptkomponenten und Abläufe}
+
+Mit Hilfe der Bizagi-Plattform wurden die folgenden Hauptkomponenten und Abläufe für den SOLL-Prozess modelliert:
+
+\begin{itemize}
+\item Integration mit CMDB: Obwohl eine zentrale Datenbank (CMDB) bereits existiert und mit ServiceNow betrieben wird, hat die starke Anpassung von ServiceNow die 
+direkte Integration mit Bizagi erschwert. Daher erfolgt die Aktualisierung der CMDB indirekt.
+\item **Benachrichtigungssystem:** Bei Abweichungen oder Anmerkungen werden die Mitarbeiter der entsprechenden Fachabteilung informiert. Dies ermöglicht es ihnen, die 
+CMDB manuell über ServiceNow zu aktualisieren.
+\end{itemize}
+
+\section{Einführung und Abstimmung des neuen Geschäftsprozesses}
+
+Mit einem klar definierten SOLL-Prozess ging es in die Phase der Implementierung und Abstimmung. Dies ist oft die herausforderndste Phase, da sie nicht nur technische, 
+sondern auch organisatorische Anpassungen erfordert.
+
+\subsection{Schulungen und Workshops}
+
+Bevor der neue Prozess eingeführt wurde, wurden umfangreiche Schulungen und Workshops für alle beteiligten Mitarbeiter durchgeführt. Ziel war es, sicherzustellen, 
+dass jeder die Veränderungen versteht und in der Lage ist, die neuen Tools und Verfahren effektiv zu nutzen, einschließlich des indirekten Aktualisierungsverfahrens für die 
+CMDB über ServiceNow.
+
+\subsection{Feedback-Schleifen und Anpassungen}
+
+Nach der ersten Einführung des neuen Prozesses wurden regelmäßige Feedback-Sessions mit den Mitarbeitern durchgeführt. Dies ermöglichte es, eventuelle Schwachstellen 
+frühzeitig zu erkennen und den Prozess kontinuierlich zu optimieren.
+
 
 \end{document}
