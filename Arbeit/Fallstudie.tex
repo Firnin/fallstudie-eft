@@ -1,5 +1,6 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage[german]{babel}
+\usepackage{graphicx}
 
 \title{Einführung und Digitalisierung eines neuen Geschäftsprozesses - Sichtprüfung und Inventur von EFTs}
 \author{Kilian Schlosser}
@@ -131,16 +132,6 @@ Zunächst wurden die Hauptziele für den neuen Prozess definiert:
 \item Erfüllung des PCI-DSS Standards.
 \end{itemize}
 
-\subsection{Hauptkomponenten und Abläufe}
-
-Mit Hilfe der Bizagi-Plattform wurden die folgenden Hauptkomponenten und Abläufe für den SOLL-Prozess modelliert:
-
-\begin{itemize}
-\item Integration mit CMDB: Obwohl eine zentrale Datenbank (CMDB) bereits existiert und mit ServiceNow betrieben wird, hat die starke Anpassung von ServiceNow die 
-direkte Integration mit Bizagi erschwert. Daher erfolgt die Aktualisierung der CMDB indirekt.
-\item **Benachrichtigungssystem:** Bei Abweichungen oder Anmerkungen werden die Mitarbeiter der entsprechenden Fachabteilung informiert. Dies ermöglicht es ihnen, die 
-CMDB manuell über ServiceNow zu aktualisieren.
-\end{itemize}
 
 \subsection{Modellierung des SOLL-Prozesses mit Bizagi}
 
@@ -168,15 +159,62 @@ wodurch kein technisches Vorwissen erforderlich ist.
 Verbesserungspotenziale zu identifizieren.
 \item \textit{Prozessmodellierung:} Mit Hilfe des Bizagi Modelers wurde der SOLL-Prozess Schritt für Schritt modelliert.
 \item \textit{Formulargestaltung:} Für den modellierten Prozess wurden entsprechende Eingabemasken mit dem Formular-Designer erstellt.
-\item \textit{Integration und Test:} Die Integration des modellierten Prozesses in die bestehende Systemlandschaft wurde durchgeführt, gefolgt von ausführlichen 
-Tests zur Sicherstellung der Funktionalität.
-\item \textit{Implementierung und Rollout:} Nach erfolgreichen Tests wurde der digitalisierte Prozess in das Live-System überführt und den Nutzern zur Verfügung gestellt.
 \end{enumerate}
 
-Durch die Nutzung von Bizagi konnte der neue Geschäftsprozess effizient modelliert, optimiert und schließlich digitalisiert werden. Dabei hat sich besonders der Formular-Designer als wertvolles Werkzeug herausgestellt, da er eine einfache und intuitive Erfassung der benötigten Daten ermöglicht.
 
+Durch die Nutzung von Bizagi konnte der neue Geschäftsprozess effizient modelliert, optimiert und schließlich digitalisiert werden. Dabei hat sich besonders der 
+Formular-Designer als wertvolles Werkzeug herausgestellt, da er eine einfache und intuitive Erfassung der benötigten Daten ermöglicht.
 
-\section{Einführung und Abstimmung des neuen Geschäftsprozesses}
+\subsubsection{Erstellung des Datenmodells}
+Um das Datenmodell zu erstellen, wurde ein Export eines EFT-Eintrags aus der CMDB als Grundlage genommen. Bizagi bietet die Möglichkeit, ein Datenmodell auf Grundlage einer 
+Excel-Datei zu erstellen und diese Felder mit Eingabemasken aus dem Formulardesigner zu verknüpfen. Um den Anforderungen des PCI-DSS Standards gerecht zu werden, mussten in der
+CMDB auch einige Felder hinzugefügt werden, um die Überprüfungskriterien mit aufzunehmen. Das spiegelt sich auch im Datenmodell wieder.
+Die verlangten Prüfungskriterien sind folgende:
+
+\begin{itemize}
+    \item Gehäuse defekt?
+    \item Externe Module angeschlossen?
+    \item Alle Siegel und Plomben unversehrt?
+    \item Inventaraufkleber unversehrt?
+    \item Sonstige Auffälligkeiten (wie z. B. lose Kabel, herausragende Drähte, neue Aufkleber oder andere Markierungen etc.)
+\end{itemize}
+
+Schlussendlich sieht das Datenmodell aus, wie in \ref{fig:data-model} abgebildet.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/data-model.png}
+    \caption{Screenshot des modellierten SOLL-Prozesses in Bizagi}
+    \label{fig:data-model}
+\end{figure}
+\newpage
+
+\subsection{Hauptkomponenten und Abläufe}
+
+Mit Hilfe der Bizagi-Plattform wurden die folgenden Hauptkomponenten und Abläufe für den SOLL-Prozess modelliert:
+
+\begin{itemize}
+\item Integration mit CMDB: Obwohl eine zentrale Datenbank (CMDB) bereits existiert und mit ServiceNow betrieben wird, hat die starke Anpassung von ServiceNow seitens tegut... 
+die direkte Integration mit Bizagi erschwert. Daher erfolgt die Aktualisierung der CMDB indirekt.
+\item Benachrichtigungssystem: Bei Abweichungen oder Anmerkungen werden die Mitarbeiter der entsprechenden Fachabteilung informiert. Dies ermöglicht es ihnen, die 
+CMDB manuell über ServiceNow zu aktualisieren und dem Vorfall nachzugehen.
+\item Automatisiert: Der Prozess läuft durch die Automatisierung von Bizagi einmal jährlich bei den Benutzern ein
+\item Inventur: Die Benutzer bekommen die aktuellen Daten zu den einzelnen EFTs der entsprechenden Filiale aus der CMDB zum Abgleich zur Verfügung gestellt
+\item Sichtprüfung: In der Maske zum Abgleich der Daten können die Nutzer ebenfalls eintragen, ob das EFT in irgendeiner Art und Weise manipuliert wurde oder ob es Auffälligkeiten gibt. 
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/process.png}
+    \caption{Screenshot des modellierten SOLL-Prozesses in Bizagi}
+    \label{fig:soll_process}
+\end{figure}
+
+Wie in Abbildung \ref{fig:soll_process} zu sehen ist, ist das Prozessmodell in seiner Grundstruktur sehr einfach. Nach intensiver Überlegung wurde entschieden, 
+sämtliche Schritte innerhalb dieser einen Aktivität im Formular abzubilden. Dies macht das Prozessmodell auf den ersten Blick zwar etwas weniger transparent, erhöht 
+jedoch die Benutzerfreundlichkeit des Formulars, da weniger häufige Wechsel zwischen verschiedenen Masken notwendig sind.
+
+\section{Einführung und Abstimmung des neuen\\ Geschäftsprozesses}
 
 Mit einem klar definierten SOLL-Prozess ging es in die Phase der Implementierung und Abstimmung. Dies ist oft die herausforderndste Phase, da sie nicht nur technische, 
 sondern auch organisatorische Anpassungen erfordert.
@@ -186,11 +224,6 @@ sondern auch organisatorische Anpassungen erfordert.
 Bevor der neue Prozess eingeführt wurde, wurden umfangreiche Schulungen und Workshops für alle beteiligten Mitarbeiter durchgeführt. Ziel war es, sicherzustellen, 
 dass jeder die Veränderungen versteht und in der Lage ist, die neuen Tools und Verfahren effektiv zu nutzen, einschließlich des indirekten Aktualisierungsverfahrens für die 
 CMDB über ServiceNow.
-
-\subsection{Feedback-Schleifen und Anpassungen}
-
-Nach der ersten Einführung des neuen Prozesses wurden regelmäßige Feedback-Sessions mit den Mitarbeitern durchgeführt. Dies ermöglichte es, eventuelle Schwachstellen 
-frühzeitig zu erkennen und den Prozess kontinuierlich zu optimieren.
 
 
 \end{document}

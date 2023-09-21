@@ -10,10 +10,10 @@
 \contentsline {subsubsection}{\numberline {2.4.3}Entscheidung}{5}{}%
 \contentsline {section}{\numberline {3}Modellierung des SOLL-Prozesses}{5}{}%
 \contentsline {subsection}{\numberline {3.1}Ziele des SOLL-Prozesses}{5}{}%
-\contentsline {subsection}{\numberline {3.2}Hauptkomponenten und Abläufe}{6}{}%
-\contentsline {subsection}{\numberline {3.3}Modellierung des SOLL-Prozesses mit Bizagi}{6}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}Möglichkeiten von Bizagi}{6}{}%
-\contentsline {subsubsection}{\numberline {3.3.2}Schritte zur Digitalisierung des Prozesses}{7}{}%
-\contentsline {section}{\numberline {4}Einführung und Abstimmung des neuen Geschäftsprozesses}{7}{}%
-\contentsline {subsection}{\numberline {4.1}Schulungen und Workshops}{7}{}%
-\contentsline {subsection}{\numberline {4.2}Feedback-Schleifen und Anpassungen}{8}{}%
+\contentsline {subsection}{\numberline {3.2}Modellierung des SOLL-Prozesses mit Bizagi}{6}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Möglichkeiten von Bizagi}{6}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Schritte zur Digitalisierung des Prozesses}{6}{}%
+\contentsline {subsubsection}{\numberline {3.2.3}Erstellung des Datenmodells}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Hauptkomponenten und Abläufe}{8}{}%
+\contentsline {section}{\numberline {4}Einführung und Abstimmung des neuen\\ Geschäftsprozesses}{9}{}%
+\contentsline {subsection}{\numberline {4.1}Schulungen und Workshops}{9}{}%
