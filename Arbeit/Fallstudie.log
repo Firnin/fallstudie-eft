@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.27)  21 SEP 2023 18:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.27)  22 SEP 2023 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -107,86 +107,126 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 4.
-)
+ [1
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write3
 \openout3 = `Fallstudie.toc'.
 
- [1
-
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (11.78752pt too wide) in paragraph at lines 20--23
+ [2]
+Overfull \hbox (11.78752pt too wide) in paragraph at lines 20--24
 \OT1/cmr/m/n/12 Diese Ar-beit besch[]aftigt sich mit der Einf[]uhrung ei-nes neu-en Gesch[]aftsprozesses
  []
 
 
-Overfull \hbox (4.26122pt too wide) in paragraph at lines 20--23
-\OT1/cmr/m/n/12 zur In-ven-ta-ri-sie-rung und Sicht-pr[]ufung von Elec-tro-nic Funds Trans-fers (EFTs).
+Overfull \hbox (4.26122pt too wide) in paragraph at lines 20--24
+\OT1/cmr/m/n/12 zur In-ven-ta-ri-sie-rung und Sicht-pr[]ufung von Elec-tro-nic Funds Trans-fers (EFTs),
  []
 
 
-Overfull \hbox (20.4041pt too wide) in paragraph at lines 24--31
-[]\OT1/cmr/m/n/12 Die zu-neh-men-de Di-gi-ta-li-sie-rung und Au-to-ma-ti-sie-rung von Gesch[]aftsprozessen
+Overfull \hbox (2.77928pt too wide) in paragraph at lines 25--33
+\OT1/cmr/m/n/12 Die zu-neh-men-de Di-gi-ta-li-sie-rung und Au-to-ma-ti-sie-rung von Gesch[]aftsprozessen
  []
 
-[2] [3{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Overfull \hbox (48.70381pt too wide) in paragraph at lines 74--76
+[3] [4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Overfull \hbox (48.70381pt too wide) in paragraph at lines 75--77
 \OT1/cmr/m/n/12 ei-ni-gen Jah-ren von te-gut... als idea-le L[]osung zur Di-gi-ta-li-sie-rung von Gesch[]aftsprozessen
  []
 
 
-Overfull \hbox (23.07832pt too wide) in paragraph at lines 91--92
+Overfull \hbox (23.07832pt too wide) in paragraph at lines 93--94
 []\OT1/cmr/m/it/12 Echtzeit-Erfassung: \OT1/cmr/m/n/12 Da-ten k[]onnen so-fort vor Ort ein-ge-ge-ben und []ubertragen
  []
 
 
-Overfull \hbox (6.99318pt too wide) in paragraph at lines 97--98
+Overfull \hbox (6.99318pt too wide) in paragraph at lines 99--100
 []\OT1/cmr/m/it/12 Begrenzte Bild-schirm-gr[]o^^Ye: \OT1/cmr/m/n/12 Die Er-fas-sung kom-ple-xer Da-ten kann schwie-
  []
 
-[4]
-Overfull \hbox (23.2221pt too wide) in paragraph at lines 116--119
+[5]
+Overfull \hbox (23.2221pt too wide) in paragraph at lines 118--124
 \OT1/cmr/m/n/12 in Ab-spra-che mit dem En-ter-pri-se Ar-chi-tek-ten der tegut...-Informationstechnologie
  []
 
-[5] [6]
-<images/data-model.png, id=26, 1029.8475pt x 508.14844pt>
+[6] [7]
+<images/data-model.png, id=30, 1029.8475pt x 508.14844pt>
 File: images/data-model.png Graphic file (type png)
 <use images/data-model.png>
-Package pdftex.def Info: images/data-model.png  used on input line 186.
+Package pdftex.def Info: images/data-model.png  used on input line 195.
 (pdftex.def)             Requested size: 390.0pt x 192.43158pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7]
-<images/process.png, id=32, 985.43156pt x 489.32813pt>
+[8]
+<images/process.png, id=35, 985.43156pt x 489.32813pt>
 File: images/process.png Graphic file (type png)
 <use images/process.png>
-Package pdftex.def Info: images/process.png  used on input line 208.
+Package pdftex.def Info: images/process.png  used on input line 216.
 (pdftex.def)             Requested size: 390.0pt x 193.65955pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (8.50836pt too wide) in paragraph at lines 213--216
+Overfull \hbox (8.50836pt too wide) in paragraph at lines 221--224
 \OT1/cmr/m/n/12 struk-tur sehr ein-fach. Nach in-ten-si-ver []Uberlegung wur-de ent-schie-den, s[]amtliche
  []
 
-[8 <./images/data-model.png>] [9 <./images/process.png>] (./Fallstudie.aux) ) 
+[9 <./images/data-model.png>]
+<images/eingabemaske.png, id=40, 922.19531pt x 550.30594pt>
+File: images/eingabemaske.png Graphic file (type png)
+<use images/eingabemaske.png>
+Package pdftex.def Info: images/eingabemaske.png  used on input line 227.
+(pdftex.def)             Requested size: 390.0pt x 232.72234pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (39.63028pt too wide) in paragraph at lines 246--249
+\OT1/cmr/m/n/12 schen den ver-schie-de-nen Sta-ke-hol-dern er-for-dert. Im Fall des neu-en Gesch[]aftsprozesses
+ []
+
+[10 <./images/process.png>]
+Overfull \hbox (4.64113pt too wide) in paragraph at lines 251--251
+[]\OT1/cmr/bx/n/14.4 Projektkoordination und Stakeholder-Management 
+ []
+
+
+Overfull \hbox (48.42325pt too wide) in paragraph at lines 258--260
+\OT1/cmr/m/n/12 Pro-jekt-ma-na-ge-ments. Re-gelm[]a^^Yige Mee-tings und Be-richt-er-stat-tun-gen gew[]ahrleisteten,
+ []
+
+[11 <./images/eingabemaske.png>]
+Overfull \hbox (2.43762pt too wide) in paragraph at lines 263--266
+\OT1/cmr/m/n/12 Grund-la-ge der ge-sam-mel-ten Da-ten wur-den An-pas-sun-gen am Gesch[]aftsprozess
+ []
+
+
+Overfull \hbox (4.30008pt too wide) in paragraph at lines 284--287
+\OT1/cmr/m/n/12 Fi-li-al-lei-ter au-to-ma-tisch []uber an-ste-hen-de Inventur- und Sicht-pr[]ufungsaufgaben
+ []
+
+[12]
+Overfull \hbox (12.7861pt too wide) in paragraph at lines 288--291
+\OT1/cmr/m/n/12 durch ei-ne di-rek-te An-bin-dung an be-ste-hen-de Sy-ste-me rea-li-siert wer-den. Dar[]uber
+ []
+
+[13] (./Fallstudie.aux) ) 
 Here is how much of TeX's memory you used:
- 2409 strings out of 476025
- 40887 string characters out of 5794015
- 1859382 words of memory out of 5000000
- 22867 multiletter control sequences out of 15000+600000
+ 2420 strings out of 476025
+ 41124 string characters out of 5794015
+ 1858382 words of memory out of 5000000
+ 22877 multiletter control sequences out of 15000+600000
  518139 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,62p,323b,226s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,62p,307b,247s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Fallstudie.pdf (9 pages, 171489 bytes).
+Output written on Fallstudie.pdf (13 pages, 241584 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

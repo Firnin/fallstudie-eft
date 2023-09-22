@@ -17,17 +17,19 @@
 
 \section{Einleitung}
 
-Diese Arbeit beschäftigt sich mit der Einführung eines neuen Geschäftsprozesses zur Inventarisierung und Sichtprüfung von Electronic Funds Transfers (EFTs). 
+Diese Arbeit beschäftigt sich mit der Einführung eines neuen Geschäftsprozesses zur Inventarisierung und Sichtprüfung von Electronic Funds Transfers (EFTs), also den Bezahlterminals 
+an den Kassen. 
 Das Ziel besteht darin, den bestehenden manuellen Prozess zu optimieren und durch eine digitale Lösung zu ersetzen. Diese Einleitung gibt einen Überblick über die 
 Aufgabenstellung, die Einbettung des Themas in ein größeres Umfeld und bietet einen Ausblick auf die weiteren Kapitel dieser Arbeit.
 
-Die zunehmende Digitalisierung und Automatisierung von Geschäftsprozessen hat in den letzten Jahren zu erheblichen Verbesserungen in Effizienz und Genauigkeit geführt. \textbf{Nachweis suchen!}
-Die Inventarisierung und Sichtprüfung von EFTs stellt jedoch weiterhin eine Herausforderung dar, da der aktuelle Prozess manuell und papierbasiert ist und nicht regelmäßig durchgeführt wird. 
-Um diese Schwachstellen zu beheben, wird in dieser Arbeit ein neuer Geschäftsprozess eingeführt, der die Vorteile der Digitalisierung nutzt.
 Die Motivation dahinter stammt aus einem Projekt der tegut... gute Lebensmittel GmbH \& Co. KG (nachfolgend nur kurz tegut... genannt) zur Verschlüsselung der Übertragung von
 Kreditkartendaten vom Bezahlterminal zum Zahlungsdienstleister. Um die Firmware einsetzen zu können, die diese Verschlüsselung ermöglicht, muss tegut... eine höhere Stufe der 
 "Payment Card Industry Data Security Standard"-Zertifizierung (PCI-DSS) als bislang erreichen. Um dieser gerecht zu werden, muss unter Anderem eine laufende Inventur und
-Sichtprüfung aller aktiv eingesetzten EFTs gewährleistet sein. 
+Sichtprüfung aller aktiv eingesetzten EFTs gewährleistet sein.
+Die zunehmende Digitalisierung und Automatisierung von Geschäftsprozessen hat in den letzten Jahren zu großen Verbesserungen in Effizienz und Genauigkeit in der Verwaltung geführt.
+Die Inventarisierung von EFTs stellt jedoch weiterhin eine Herausforderung dar, da der aktuelle Prozess manuell und teilweise papierbasiert ist sowie nicht regelmäßig 
+durchgeführt wird. 
+Um diese Schwachstellen zu beheben, wird in dieser Arbeit ein neuer Geschäftsprozess eingeführt, der die Vorteile der Digitalisierung nutzt. 
 
 Die Arbeit ist in mehrere Kapitel unterteilt, die jeweils verschiedene Aspekte der Problematik behandeln. Im zweiten Kapitel wird die Planungsphase näher beschrieben, 
 in der der IST-Prozess analysiert und Schwachstellen identifiziert werden. Dabei wird auch die Wahl der Bizagi-Plattform als Lösung zur Digitalisierung des Prozesses erläutert. 
@@ -35,10 +37,9 @@ Das dritte Kapitel widmet sich der Modellierung des SOLL-Prozesses und zeigt auf
 können.
 
 Im vierten Kapitel wird die Einführung und Abstimmung des neuen Geschäftsprozesses diskutiert. Es werden die verschiedenen Stakeholder einbezogen und deren Bedürfnisse 
-berücksichtigt, um eine reibungslose Implementierung zu gewährleisten. Des Weiteren wird im fünften Kapitel die Frage der Endgeräte diskutiert und die Vor- und Nachteile 
-von Mobilen Datenerfassungsgeräten (MDE) und Personal Computern (PC) abgewogen.
+berücksichtigt, um eine reibungslose Implementierung zu gewährleisten.
 
-Abschließend werden im sechsten Kapitel die wichtigsten Erkenntnisse zusammengefasst und ein Ausblick auf mögliche zukünftige Entwicklungen gegeben.
+Abschließend werden die wichtigsten Erkenntnisse zusammengefasst und ein Ausblick auf mögliche zukünftige Entwicklungen gegeben.
 
 \section{Planungsphase}
 
@@ -81,7 +82,8 @@ Die Implementierung des Prozesses mit Hilfe der Bizagi-Plattform wird im nächst
 
 \subsection{Mobil vs. Stationär: Die Wahl des Endgeräts}
 
-Die Verwendung eines geeigneten Endgeräts ist entscheidend für den Erfolg des digitalisierten Prozesses. Insbesondere ging es darum, ob moderne MDEs oder herkömmliche PCs eingesetzt werden sollten.
+Die Verwendung eines geeigneten Endgeräts ist entscheidend für den Erfolg des digitalisierten Prozesses. Insbesondere ging es darum, ob moderne MDEs oder herkömmliche PCs 
+eingesetzt werden sollten.
 
 \subsubsection{Mobile Datenerfassungsgeräte (MDEs)}
 
@@ -108,14 +110,18 @@ Die Verwendung eines geeigneten Endgeräts ist entscheidend für den Erfolg des 
 
 \textbf{Nachteile:}
 \begin{itemize}
-\item \textit{Mobilität:} PCs sind in der Regel stationär und nicht für den Einsatz vor Ort geeignet. Das erhöht die Fehlerquote bei der Übertragung von komplexen Daten,
+\item \textit{Mobilität:} PCs sind stationär und nicht für den mobilen Einsatz vor Ort geeignet. Das erhöht die Fehlerquote bei der Übertragung von komplexen Daten,
 wie Inventar- oder Seriennummern.
 \end{itemize}
 
 \subsubsection{Entscheidung}
 Nach sorgfältiger Abwägung aller Vor- und Nachteile beider Lösungen wurde in Absprache mit dem Enterprise Architekten der tegut...-Informationstechnologie entschieden, 
 den Prozess zunächst für den PC zu modellieren. Diese Entscheidung wurde maßgeblich von der Tatsache beeinflusst, dass noch nicht alle Filialen die neuen, Android-betriebenen 
-MDEs verwenden. Zudem legt der Enterprise Architekt Wert darauf, dass die MDEs als Plattform so isoliert wie möglich betrieben werden.
+MDEs verwenden. Zudem legt der Enterprise Architekt Wert darauf, dass die MDEs als Plattform so isoliert wie möglich betrieben werden. Außerdem haben alle Filialleiter ein Notebook,
+das zur Durchführung der Inventur und Sichtprüfung benutzt werden kann. Zusätzlich hilft die Verwendung von Notebooks, den Nachteil der geringeren Mobilität 
+eines stationären PCs zu umgehen, was insbesondere in den Filialräumlichkeiten von Vorteil ist, da die Filialleiter die Möglichkeit haben, sich während der Durchführung 
+der Inventur und Sichtprüfung frei zu bewegen.
+
 
 \section{Modellierung des SOLL-Prozesses}
 
@@ -169,22 +175,25 @@ Formular-Designer als wertvolles Werkzeug herausgestellt, da er eine einfache un
 Um das Datenmodell zu erstellen, wurde ein Export eines EFT-Eintrags aus der CMDB als Grundlage genommen. Bizagi bietet die Möglichkeit, ein Datenmodell auf Grundlage einer 
 Excel-Datei zu erstellen und diese Felder mit Eingabemasken aus dem Formulardesigner zu verknüpfen. Um den Anforderungen des PCI-DSS Standards gerecht zu werden, mussten in der
 CMDB auch einige Felder hinzugefügt werden, um die Überprüfungskriterien mit aufzunehmen. Das spiegelt sich auch im Datenmodell wieder.
-Die verlangten Prüfungskriterien sind folgende:
+Folgende Kriterien müssen überprüft  werden:
 
 \begin{itemize}
-    \item Gehäuse defekt?
-    \item Externe Module angeschlossen?
-    \item Alle Siegel und Plomben unversehrt?
-    \item Inventaraufkleber unversehrt?
-    \item Sonstige Auffälligkeiten (wie z. B. lose Kabel, herausragende Drähte, neue Aufkleber oder andere Markierungen etc.)
+    \item Defektes Gehäuse
+    \item Anschluss externer Module
+    \item Unversehrtheit von Siegeln und Plomben
+    \item Unversehrtheit des Inventaraufklebers und der Terminal-ID
+    \item Sonstige Auffälligkeiten (z. B. lose Kabel, herausragende Drähte, neue Aufkleber oder andere Markierungen etc.)
 \end{itemize}
 
 Schlussendlich sieht das Datenmodell aus, wie in \ref{fig:data-model} abgebildet.
+Damit die Daten in Bizagi aktuell sind, wird aus dem ServiceNow regelmäßig ein Export der Einträge aller EFT-Geräte erstellt. Momentan muss diese Export-Liste noch händisch
+nach Bizagi importiert werden. Da das aber ein Aufwand von nur wenigen Minuten für den zuständigen Mitarbeiter ist, wurde vorerst darauf verzichtet eine komplett automatisierte 
+Lösung zu entwickeln.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{images/data-model.png}
-    \caption{Screenshot des modellierten SOLL-Prozesses in Bizagi}
+    \caption{Screenshot des Datenmodells in Bizagi}
     \label{fig:data-model}
 \end{figure}
 \newpage
@@ -198,7 +207,6 @@ Mit Hilfe der Bizagi-Plattform wurden die folgenden Hauptkomponenten und Abläuf
 die direkte Integration mit Bizagi erschwert. Daher erfolgt die Aktualisierung der CMDB indirekt.
 \item Benachrichtigungssystem: Bei Abweichungen oder Anmerkungen werden die Mitarbeiter der entsprechenden Fachabteilung informiert. Dies ermöglicht es ihnen, die 
 CMDB manuell über ServiceNow zu aktualisieren und dem Vorfall nachzugehen.
-\item Automatisiert: Der Prozess läuft durch die Automatisierung von Bizagi einmal jährlich bei den Benutzern ein
 \item Inventur: Die Benutzer bekommen die aktuellen Daten zu den einzelnen EFTs der entsprechenden Filiale aus der CMDB zum Abgleich zur Verfügung gestellt
 \item Sichtprüfung: In der Maske zum Abgleich der Daten können die Nutzer ebenfalls eintragen, ob das EFT in irgendeiner Art und Weise manipuliert wurde oder ob es Auffälligkeiten gibt. 
 \end{itemize}
@@ -214,16 +222,77 @@ Wie in Abbildung \ref{fig:soll_process} zu sehen ist, ist das Prozessmodell in s
 sämtliche Schritte innerhalb dieser einen Aktivität im Formular abzubilden. Dies macht das Prozessmodell auf den ersten Blick zwar etwas weniger transparent, erhöht 
 jedoch die Benutzerfreundlichkeit des Formulars, da weniger häufige Wechsel zwischen verschiedenen Masken notwendig sind.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/eingabemaske.png}
+    \caption{Screenshot der Eingabemaske mit Beispieldaten}
+    \label{fig:maske}
+\end{figure}
+
+Der Prozess beginnt damit, dass sich ein Mitarbeiter mit seinem Filialkonto bei der Bizagi-Cloud anmeldet. Nach erfolgreicher Anmeldung initiiert der Mitarbeiter 
+einen neuen Vorgang unter der Bezeichnung "Inventur EFT-Geräte". Auf Grundlage der Anmeldedaten filtert Bizagi automatisch die für den jeweiligen Mitarbeiter zugehörigen 
+EFT-Geräte aus der vorhandenen Liste heraus und stellt diese im System bereit.
+
+Für jedes dieser EFT-Geräte wird nun in der Benutzeroberfläche eine separate Seite innerhalb der Eingabemaske generiert. Auf diesen Seiten trägt der Mitarbeiter 
+die relevanten Informationen im Rahmen der Inventur und Sichtprüfung ein. Nachdem alle zugeordneten EFT-Geräte kontrolliert und die entsprechenden Informationen eingetragen 
+wurden, speichert der Mitarbeiter den Vorgang ab und beendet diesen im System.
+
+Sollten während der Kontrolle Abweichungen zwischen den erfassten Daten und den bereits vorhandenen Daten im ServiceNow festgestellt werden, wird automatisch eine 
+Benachrichtigung in Form einer E-Mail an die Revisionsabteilung gesendet. Die Revisionsabteilung ist dann für die Untersuchung des Vorfalls zuständig und nimmt gegebenenfalls 
+notwendige Korrekturen oder weitere Schritte vor.
+
 \section{Einführung und Abstimmung des neuen\\ Geschäftsprozesses}
 
-Mit einem klar definierten SOLL-Prozess ging es in die Phase der Implementierung und Abstimmung. Dies ist oft die herausforderndste Phase, da sie nicht nur technische, 
-sondern auch organisatorische Anpassungen erfordert.
+Die Implementierung eines digitalisierten Geschäftsprozesses ist eine komplexe Aufgabe, die sorgfältige Planung, Koordination und Abstimmung zwischen den verschiedenen 
+Stakeholdern erfordert. Im Fall des neuen Geschäftsprozesses zur Inventarisierung und Sichtprüfung der EFTs sind die relevanten Stakeholder vor allem die Mitarbeiter 
+der Revisions- und IT-Abteilung sowie die Endanwender des Prozesses in den einzelnen Filialen.
 
-\subsection{Schulungen und Workshops}
 
-Bevor der neue Prozess eingeführt wurde, wurden umfangreiche Schulungen und Workshops für alle beteiligten Mitarbeiter durchgeführt. Ziel war es, sicherzustellen, 
-dass jeder die Veränderungen versteht und in der Lage ist, die neuen Tools und Verfahren effektiv zu nutzen, einschließlich des indirekten Aktualisierungsverfahrens für die 
-CMDB über ServiceNow.
+\subsection{Projektkoordination und Stakeholder-Management}
+
+Ein effektives Projektmanagement ist essentiell, um die Einführung des neuen Geschäftsprozesses koordiniert und effizient zu gestalten. 
+Um zusätzliche Arbeitslast für alle Beteiligten zu vermieden, wurde kein neues Projektteam zusammengestellt. Stattdessen hat sich das Team des übergeordneten Projekts - 
+bestehend aus Vertretern der IT-Abteilung, der Revision und des Vertriebs - dieser Aufgabe angenommen. Dieses Team war verantwortlich für die Entwicklung des Projektplans, 
+die Identifizierung von Meilensteinen und die kontinuierliche Überwachung des Projektfortschritts.
+
+Die Kommunikation mit den Stakeholdern war ein zentraler Aspekt des Projektmanagements. Regelmäßige Meetings und Berichterstattungen gewährleisteten, 
+dass alle Beteiligten über den Stand des Projekts informiert waren und dass ihr Feedback in die Weiterentwicklung des Prozesses einfloss. 
+
+\subsection{Evaluierung und Anpassung}
+
+Vor der Einführung des neuen Geschäftsprozesses war es wichtig, dessen Effektivität und Effizienz zu bewerten. Dazu wurden Feedback-Sitzungen mit den Endanwendern 
+durchgeführt und Performance-Metriken analysiert. Auf Grundlage der gesammelten Daten wurden Anpassungen am Geschäftsprozess vorgenommen, um die Benutzerfreundlichkeit und 
+die Prozesseffizienz weiter zu verbessern.
+
+\subsection{Schlussfolgerung}
+
+Die Einführung und Abstimmung des neuen Geschäftsprozesses war ein iterativer und koordinierter Prozess, der die aktive Beteiligung aller Stakeholder erforderte. 
+Durch effektives Projektmanagementund kontinuierliche Evaluierung wurde ein digitalisierter Geschäftsprozess geschaffen, der die Inventarisierung 
+und Sichtprüfung der EFTs effizienter und benutzerfreundlicher gestaltet.
+
+\section{Zusammenfassung und Ausblick}
+
+\subsection{Zusammenfassung wichtiger Erkenntnisse}
+Die Einführung eines digitalisierten Geschäftsprozesses für die Inventur und Sichtprüfung der EFT-Geräte bei tegut... hat eine Reihe wichtiger Erkenntnisse hervorgebracht. 
+Durch die Digitalisierung konnte eine deutliche Effizienzsteigerung erzielt und die Fehleranfälligkeit des bisher manuellen, papierbasierten Prozesses reduziert werden. 
+Die Implementierung der Bizagi-Plattform hat sich als passende Lösung erwiesen, um den spezifischen Anforderungen des Unternehmens gerecht zu werden. Der Einsatz von PCs, 
+unter Berücksichtigung der vorhandenen Infrastruktur und der Benutzerfreundlichkeit, erwies sich als vorteilhaft. Auch die Möglichkeit der Integration mit der bereits 
+bestehenden CMDB über ServiceNow, trotz einiger initialer Herausforderungen, förderte die Schaffung eines nahtlosen Workflows. Die in dieser Arbeit durchgeführten 
+Prozessoptimierungen haben somit eine solide Basis für den weiteren Ausbau der digitalen Prozesslandschaft bei tegut... geschaffen.
+
+\subsection{Ausblick}
+In zukünftigen Entwicklungsphasen sollen weitere Funktionalitäten implementiert werden, um den digitalen Inventurprozess noch effizienter und benutzerfreundlicher zu gestalten. 
+Eine zentrale Erweiterung stellt die Implementierung einer automatischen Benachrichtigungsfunktion dar. Dabei sollen Filialleiter automatisch über anstehende Inventur- und 
+Sichtprüfungsaufgaben informiert werden, wodurch die Planung und Koordination innerhalb der Filialen weiter verbessert wird. 
+
+Ein weiteres wesentliches Feature ist der automatische Datenimport in Bizagi. Dies würde die manuelle Dateneingabe weiter reduzieren und könnte durch eine direkte 
+Anbindung an bestehende Systeme realisiert werden. Darüber hinaus könnten weitere Anpassungen und Optimierungen an den Eingabemasken und der Benutzeroberfläche vorgenommen 
+werden, um die Usability kontinuierlich zu verbessern.
+
+Die vorgenommene Digitalisierung des Inventurprozesses markiert einen wichtigen Schritt in Richtung einer umfassenderen Digitalisierungsstrategie bei tegut... und legt den 
+Grundstein für die Realisierung weiterer Digitalisierungsprojekte. Durch kontinuierliche Verbesserungen und Erweiterungen des Systems kann tegut... seine Position in einem 
+digitalisierten und effizienten Einzelhandelsumfeld weiter festigen und ausbauen.
+\end{document}
 
 
 \end{document}

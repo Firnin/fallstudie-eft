@@ -1,19 +1,24 @@
 \babel@toc {german}{}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{2}{}%
-\contentsline {section}{\numberline {2}Planungsphase}{3}{}%
-\contentsline {subsection}{\numberline {2.1}Analyse des IST-Prozesses}{3}{}%
-\contentsline {subsection}{\numberline {2.2}Identifikation von Schwachstellen}{3}{}%
-\contentsline {subsection}{\numberline {2.3}Wahl der Bizagi-Plattform}{4}{}%
-\contentsline {subsection}{\numberline {2.4}Mobil vs. Stationär: Die Wahl des Endgeräts}{4}{}%
-\contentsline {subsubsection}{\numberline {2.4.1}Mobile Datenerfassungsgeräte (MDEs)}{4}{}%
-\contentsline {subsubsection}{\numberline {2.4.2}Personal Computer (PC)}{5}{}%
-\contentsline {subsubsection}{\numberline {2.4.3}Entscheidung}{5}{}%
-\contentsline {section}{\numberline {3}Modellierung des SOLL-Prozesses}{5}{}%
-\contentsline {subsection}{\numberline {3.1}Ziele des SOLL-Prozesses}{5}{}%
-\contentsline {subsection}{\numberline {3.2}Modellierung des SOLL-Prozesses mit Bizagi}{6}{}%
-\contentsline {subsubsection}{\numberline {3.2.1}Möglichkeiten von Bizagi}{6}{}%
-\contentsline {subsubsection}{\numberline {3.2.2}Schritte zur Digitalisierung des Prozesses}{6}{}%
-\contentsline {subsubsection}{\numberline {3.2.3}Erstellung des Datenmodells}{7}{}%
-\contentsline {subsection}{\numberline {3.3}Hauptkomponenten und Abläufe}{8}{}%
-\contentsline {section}{\numberline {4}Einführung und Abstimmung des neuen\\ Geschäftsprozesses}{9}{}%
-\contentsline {subsection}{\numberline {4.1}Schulungen und Workshops}{9}{}%
+\contentsline {section}{\numberline {1}Einleitung}{3}{}%
+\contentsline {section}{\numberline {2}Planungsphase}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Analyse des IST-Prozesses}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Identifikation von Schwachstellen}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Wahl der Bizagi-Plattform}{5}{}%
+\contentsline {subsection}{\numberline {2.4}Mobil vs. Stationär: Die Wahl des Endgeräts}{5}{}%
+\contentsline {subsubsection}{\numberline {2.4.1}Mobile Datenerfassungsgeräte (MDEs)}{5}{}%
+\contentsline {subsubsection}{\numberline {2.4.2}Personal Computer (PC)}{6}{}%
+\contentsline {subsubsection}{\numberline {2.4.3}Entscheidung}{6}{}%
+\contentsline {section}{\numberline {3}Modellierung des SOLL-Prozesses}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Ziele des SOLL-Prozesses}{7}{}%
+\contentsline {subsection}{\numberline {3.2}Modellierung des SOLL-Prozesses mit Bizagi}{7}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Möglichkeiten von Bizagi}{7}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Schritte zur Digitalisierung des Prozesses}{8}{}%
+\contentsline {subsubsection}{\numberline {3.2.3}Erstellung des Datenmodells}{8}{}%
+\contentsline {subsection}{\numberline {3.3}Hauptkomponenten und Abläufe}{9}{}%
+\contentsline {section}{\numberline {4}Einführung und Abstimmung des neuen\\ Geschäftsprozesses}{11}{}%
+\contentsline {subsection}{\numberline {4.1}Projektkoordination und Stakeholder-Management}{11}{}%
+\contentsline {subsection}{\numberline {4.2}Evaluierung und Anpassung}{12}{}%
+\contentsline {subsection}{\numberline {4.3}Schlussfolgerung}{12}{}%
+\contentsline {section}{\numberline {5}Zusammenfassung und Ausblick}{12}{}%
+\contentsline {subsection}{\numberline {5.1}Zusammenfassung wichtiger Erkenntnisse}{12}{}%
+\contentsline {subsection}{\numberline {5.2}Ausblick}{13}{}%
