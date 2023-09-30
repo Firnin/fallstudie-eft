@@ -117,7 +117,7 @@ wie Inventar- oder Seriennummern.
 \subsubsection{Entscheidung}
 Nach sorgfältiger Abwägung aller Vor- und Nachteile beider Lösungen wurde in Absprache mit dem Enterprise Architekten der tegut...-Informationstechnologie entschieden, 
 den Prozess zunächst für den PC zu modellieren. Diese Entscheidung wurde maßgeblich von der Tatsache beeinflusst, dass noch nicht alle Filialen die neuen, Android-betriebenen 
-MDEs verwenden. Zudem legt der Enterprise Architekt Wert darauf, dass die MDEs als Plattform so isoliert wie möglich betrieben werden. Außerdem haben alle Filialleiter ein Notebook,
+MDEs verwenden. Zudem legt der Enterprise Architekt Wert darauf, dass die MDEs als Plattform so isoliert wie möglich betrieben werden. \cite{Schlosser_Ehm_2023} Außerdem haben alle Filialleiter ein Notebook,
 das zur Durchführung der Inventur und Sichtprüfung benutzt werden kann. Zusätzlich hilft die Verwendung von Notebooks, den Nachteil der geringeren Mobilität 
 eines stationären PCs zu umgehen, was insbesondere in den Filialräumlichkeiten von Vorteil ist, da die Filialleiter die Möglichkeit haben, sich während der Durchführung 
 der Inventur und Sichtprüfung frei zu bewegen.
@@ -185,12 +185,14 @@ Folgende Kriterien müssen überprüft  werden:
     \item Sonstige Auffälligkeiten (z. B. lose Kabel, herausragende Drähte, neue Aufkleber oder andere Markierungen etc.)
 \end{itemize}
 
+\cite{Würz_Gebauer_2022}
+
 Schlussendlich sieht das Datenmodell aus, wie in \ref{fig:data-model} abgebildet.
 Damit die Daten in Bizagi aktuell sind, wird aus dem ServiceNow regelmäßig ein Export der Einträge aller EFT-Geräte erstellt. Momentan muss diese Export-Liste noch händisch
 nach Bizagi importiert werden. Da das aber ein Aufwand von nur wenigen Minuten für den zuständigen Mitarbeiter ist, wurde vorerst darauf verzichtet eine komplett automatisierte 
 Lösung zu entwickeln.
 
-\begin{figure}[h]
+\begin{figure}
     \centering
     \includegraphics[width=\textwidth]{images/data-model.png}
     \caption{Screenshot des Datenmodells in Bizagi}
@@ -211,7 +213,7 @@ CMDB manuell über ServiceNow zu aktualisieren und dem Vorfall nachzugehen.
 \item Sichtprüfung: In der Maske zum Abgleich der Daten können die Nutzer ebenfalls eintragen, ob das EFT in irgendeiner Art und Weise manipuliert wurde oder ob es Auffälligkeiten gibt. 
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}
     \centering
     \includegraphics[width=\textwidth]{images/process.png}
     \caption{Screenshot des modellierten SOLL-Prozesses in Bizagi}
@@ -222,7 +224,7 @@ Wie in Abbildung \ref{fig:soll_process} zu sehen ist, ist das Prozessmodell in s
 sämtliche Schritte innerhalb dieser einen Aktivität im Formular abzubilden. Dies macht das Prozessmodell auf den ersten Blick zwar etwas weniger transparent, erhöht 
 jedoch die Benutzerfreundlichkeit des Formulars, da weniger häufige Wechsel zwischen verschiedenen Masken notwendig sind.
 
-\begin{figure}[h]
+\begin{figure}
     \centering
     \includegraphics[width=\textwidth]{images/eingabemaske.png}
     \caption{Screenshot der Eingabemaske mit Beispieldaten}
@@ -230,7 +232,7 @@ jedoch die Benutzerfreundlichkeit des Formulars, da weniger häufige Wechsel zwi
 \end{figure}
 
 Der Prozess beginnt damit, dass sich ein Mitarbeiter mit seinem Filialkonto bei der Bizagi-Cloud anmeldet. Nach erfolgreicher Anmeldung initiiert der Mitarbeiter 
-einen neuen Vorgang unter der Bezeichnung "Inventur EFT-Geräte". Auf Grundlage der Anmeldedaten filtert Bizagi automatisch die für den jeweiligen Mitarbeiter zugehörigen 
+einen neuen Vorgang unter der Bezeichnung \textit{Inventur EFT-Geräte}. Auf Grundlage der Anmeldedaten filtert Bizagi automatisch die für den jeweiligen Mitarbeiter zugehörigen 
 EFT-Geräte aus der vorhandenen Liste heraus und stellt diese im System bereit.
 
 Für jedes dieser EFT-Geräte wird nun in der Benutzeroberfläche eine separate Seite innerhalb der Eingabemaske generiert. Auf diesen Seiten trägt der Mitarbeiter 
@@ -292,7 +294,14 @@ werden, um die Usability kontinuierlich zu verbessern.
 Die vorgenommene Digitalisierung des Inventurprozesses markiert einen wichtigen Schritt in Richtung einer umfassenderen Digitalisierungsstrategie bei tegut... und legt den 
 Grundstein für die Realisierung weiterer Digitalisierungsprojekte. Durch kontinuierliche Verbesserungen und Erweiterungen des Systems kann tegut... seine Position in einem 
 digitalisierten und effizienten Einzelhandelsumfeld weiter festigen und ausbauen.
-\end{document}
 
+\section*{Selbsständigkeitserklärung}
+Ich erkläre hiermit, dass ich die vorliegende Hausarbeit ohne fremde Hilfe verfasst und nur die im Literaturverzeichnis angegebenen Quellen verwendet habe.\\
+
+Datum: 30.09.2023
+
+\newpage
+\bibliography{bib}
+\bibliographystyle{abbrvdin}
 
 \end{document}
